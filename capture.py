@@ -21,7 +21,7 @@ if uploaded_file is not None:
         buffered.seek(0)
         
         files = {'file': buffered}
-        response = requests.post("http://127.0.0.1:8000/upload", files=files)
+        response = requests.post("api.py", files=files)
         
         if response.status_code == 200:
             result = response.json()
