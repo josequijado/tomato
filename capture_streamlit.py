@@ -20,12 +20,18 @@ if uploaded_file is not None:
         image.save(buffered, format="JPEG")
         buffered.seek(0)
         
-        files = {'file': buffered}
-        response = requests.post("api.py", files=files)
+        files = {'file': ("uploaded_image.jpg", buffered, "image/jpeg")}
         
-        if response.status_code == 200:
-            result = response.json()
-            st.write("Resultado del diagnóstico:")
-            st.json(result)
-        else:
-            st.write("Error al enviar la imagen.")
+        try:
+            response = requests.post("http://localhost:8000/predict", files=files)
+            if response.status_code == 200:
+                result = response.json()
+                st.write("Resultado del diagnóstico:")
+                st.write(result['prediction'])  # Mostrar solo la predicción
+            else:
+                st.write("Error al enviar la imagen.")
+                st.write(f"Status code: {response.status_code}")
+                st.write(response.text)
+        except requests.exceptions.RequestException as e:
+            st.write("Exception occurred while sending the image")
+            st.write(e)
