@@ -1,4 +1,4 @@
-<div style="text-align: center;"><img src="tomate.png" alt="Tomate"></div>
+<img src="tomate.png" alt="Tomate">
 
 
 #AI TOMATE
