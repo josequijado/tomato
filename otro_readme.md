@@ -1,8 +1,10 @@
+#AI TOMATE
+####*AI TOMATE* es un proyecto de identificación de enfermedades en plantas tomateras mediante el apoyo de la Inteligencia Artificial.
+
+
 <img src="tomate.png" alt="Tomate">
 
 
-#AI TOMATE
-####*AI TOMATE* es un proyecto de identificación de enfermedades en plantas tomateras mediante el apoyo de la Inteligencia Artificial.
 
 ## ÍNDICE
 - [Introducción](#introducción)
