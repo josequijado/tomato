@@ -1,8 +1,9 @@
 <div style="text-align: center;"><img src="tomate.png" alt="Tomate"></div>
 
 <div style="text-align: left;">
-# AI TOMATE
-#### *AI TOMATE* es un proyecto de identificación de enfermedades en plantas tomateras mediante el apoyo de la Inteligencia Artificial.
+
+#AI TOMATE
+####*AI TOMATE* es un proyecto de identificación de enfermedades en plantas tomateras mediante el apoyo de la Inteligencia Artificial.
 
 ## ÍNDICE
 - [Introducción](#introducción)
