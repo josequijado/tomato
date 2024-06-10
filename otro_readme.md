@@ -1,6 +1,5 @@
 <div style="text-align: center;"><img src="tomate.png" alt="Tomate"></div>
 
-<div style="text-align: left;">
 
 #AI TOMATE
 ####*AI TOMATE* es un proyecto de identificación de enfermedades en plantas tomateras mediante el apoyo de la Inteligencia Artificial.
@@ -51,4 +50,3 @@ En fases futuras de este proyecto se espera implementar mejoras y ampliaciones d
 El desarrollo de un sistema basado en inteligencia artificial para la identificación de enfermedades en plantas de tomate representa un avance significativo en la agricultura moderna. Este proyecto no solo ofrece una solución precisa y eficiente para el diagnóstico temprano de enfermedades, sino que también proporciona una herramienta valiosa que puede ser adaptada y expandida a otros cultivos, mejorando así la productividad y la sostenibilidad agrícola. La combinación de tecnologías avanzadas y un enfoque centrado en el usuario final garantiza que los agricultores puedan tomar decisiones informadas y oportunas para el manejo de sus cultivos.
 
 A medida que el proyecto avanza, las futuras mejoras y expansiones previstas asegurarán que el sistema continúe evolucionando y adaptándose a las necesidades cambiantes del sector agrícola. La implementación de bases de datos para almacenamiento de resultados y el uso de herramientas de visualización avanzadas como Matplotlib y Seaborn, potenciarán aún más la capacidad de los agricultores para analizar y comprender los datos generados. Con estas innovaciones, estamos posicionados para ofrecer una solución integral y escalable que apoye la agricultura de precisión y contribuya al desarrollo sostenible del sector.
-<div>
