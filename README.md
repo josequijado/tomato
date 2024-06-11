@@ -11,7 +11,7 @@
 1. Clona el repositorio:
 
     ```sh
-    git clone https://github.com/tu_usuario/tomato.git
+    git clone https://github.com/FernanMoreno/AITomato.git
     cd tomato
     ```
 
