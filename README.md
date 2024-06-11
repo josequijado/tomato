@@ -1,69 +1,72 @@
-# Proyecto Tomato
+# AI TOMATE - Proyecto de Identificación de Enfermedades en Plantas Tomateras
 
-### Identificación de enfermedades en plantas tomateras con visión por computador en un dron
+![AITomate](tomate.png)
 
-Este proyecto utiliza una webapp para tomar fotos de plantas tomateras con un dron. Las imágenes capturadas son enviadas a una API de FastAPI que las procesa mediante un modelo de machine learning para identificar posibles enfermedades o determinar si la planta está sana. El proyecto es open source y está diseñado para facilitar la detección temprana de enfermedades en cultivos de tomates.
+## Descripción General
 
-## Estructura del Proyecto
-
-- `api.py`: API de FastAPI que conecta con el modelo para procesar las imágenes.
-- `best_model.weights.h5`: Archivo de pesos del modelo entrenado.
-- `capture.py`: Script principal para capturar imágenes con el dron.
-- `modeloTomates_version2.ipynb`: Notebook de Jupyter con el modelo de detección de enfermedades.
+**AI TOMATE** es un proyecto que utiliza inteligencia artificial para la identificación temprana de enfermedades en plantas de tomate. Este proyecto se basa en el uso de visión por computadora y técnicas de aprendizaje automático para analizar imágenes de plantas tomateras y diagnosticar posibles enfermedades. El sistema se compone de una aplicación web para la captura de imágenes, una API para el procesamiento de las imágenes y una red neuronal para la detección de enfermedades, ademas incluimos un LLM para ayudar obtener mayor descripcion de la planta afectada.
 
 ## Instalación
 
-1. Clonar el repositorio:
+1. Clona el repositorio:
+
     ```sh
     git clone https://github.com/tu_usuario/tomato.git
     cd tomato
     ```
 
-2. Instalar las dependencias:
+2. Instala las dependencias:
+
     ```sh
     pip install -r requirements.txt
     ```
 
-3. Configurar Git LFS para manejar archivos grandes:
+3. Configura Git LFS para manejar archivos grandes:
+
     ```sh
     git lfs install
     git lfs pull
     ```
 
+4. Instala Ollama y el modelo llava-phi3:
+
+    ```sh
+    ollama run llava-phi3
+    ```
+
 ## Uso
 
-1. Ejecutar la API:
+1. Ejecuta la API:
+
     ```sh
-    uvicorn api:app --reload
+    uvicorn app:app --reload
     ```
 
-2. Capturar una imagen con el dron:
+2. Captura una imagen con el dron:
+
     ```sh
-    python capture.py
+    streamlit run capture_streamlit.py
     ```
 
-3. La imagen será enviada automáticamente a la API y el resultado de la detección se mostrará en la webapp.
+3. La imagen se enviará automáticamente a la API y el resultado de la detección se mostrará en la webapp.
 
-## Beneficios del Proyecto
+## Estructura del Proyecto
 
-- **Detección temprana de enfermedades**: Ayuda a identificar problemas antes de que se propaguen.
-- **Optimización del tiempo**: Uso de drones para cubrir grandes áreas de cultivo rápidamente.
-- **Facilidad de uso**: Webapp intuitiva para usuarios sin experiencia técnica.
-- **Open Source**: Disponible para la comunidad, fomentando la colaboración y mejora continua.
+- `app.py`: API de FastAPI que conecta con el modelo para procesar las imágenes.
+- `best_model.weights.h5`: Archivo de pesos del modelo entrenado.
+- `resnet50_model.h5`: Archivo del modelo.
+- `capture_streamlit.py`: Script de streamlit para poder visualizar las detecciones en las imágenes con el dron.
+- `modeloTomates_version2.ipynb`: Notebook de Jupyter con el modelo de detección de enfermedades.
+- `llm_multimodal.py`: Ruta de la API al LLM multimodal.
+- `model_predict.py`: Ruta de la API al modelo de las predicciones.
+- `upload.py`: Ruta de la API para subir las imagenes.
+- `dataset-optimizado.zip`: El dataset con el que se entreno el modelo de deteccion de enfermedades.
 
 ## Contribuciones
 
 Las contribuciones son bienvenidas. Por favor, crea un fork del proyecto y envía un pull request con tus mejoras.
 
-## Licencia
-
-Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
 
 ## Contacto
 
-Para preguntas o sugerencias, por favor abre un issue en el repositorio o contacta a [tu correo electrónico].
-
----
-
-Este proyecto se conecta con un Large Language Model (LLM) de llama.cpp y utiliza tecnologías modernas de frontend y backend para proporcionar una solución robusta y eficiente en la detección de enfermedades en plantas tomateras.
-
+Para preguntas o sugerencias, por favor abre un issue en el repositorio o contacta a fernandojosemolinamore@gmail.com, isaacripoll@gmail.com, susana-aranda@outlook.es, jquijado@gmail.com y victor.arbiol@gmail.com.
