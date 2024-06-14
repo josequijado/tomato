@@ -62,6 +62,10 @@
 - `upload.py`: Ruta de la API para subir las imagenes.
 - `dataset-optimizado.zip`: El dataset con el que se entreno el modelo de deteccion de enfermedades.
 
+## Documentación directa de nuestro proyecto:
+
+Puede entender mas sobre nuestro proyecto leyendo la documentación hecha: [AITomate Documentation](https://www.notion.so/Documentaci-n-AITomate-85595b4da73b471ba6943edbed4daa41?pvs=4)
+
 ## Contribuciones
 
 Las contribuciones son bienvenidas. Por favor, crea un fork del proyecto y envía un pull request con tus mejoras.
